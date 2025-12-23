@@ -14,18 +14,8 @@ const AdminDashboard = () => {
   const [attendees, setAttendees] = useState([]);
   const [loading, setLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [serverIp, setServerIp] = useState(window.location.hostname);
-
-  // Fetch Server IP - Need to fetch the REAL LAN IP from backend for the QR code
-  useEffect(() => {
-    axios.get(`${API_URL}/config`)
-      .then(res => {
-        if (res.data.ip && res.data.ip !== 'localhost') {
-          setServerIp(res.data.ip);
-        }
-      })
-      .catch(err => console.error("Failed to fetch IP config"));
-  }, []);
+  // Use the actual browser URL for the join link (works perfectly for production)
+  const [serverIp] = useState(window.location.hostname);
 
   // Initial Check / Fetch
   useEffect(() => {
