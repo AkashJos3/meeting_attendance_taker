@@ -37,7 +37,7 @@ app.use('/api', router);
 // Serve Frontend (Production Ready) - Optional for now, but good to have setup
 // When built, client/dist will contain the static files
 app.use(express.static(path.join(__dirname, 'client/dist')));
-app.get('*', (req, res) => {
+app.get(/(.*)/, (req, res) => {
     res.sendFile(path.join(__dirname, 'client/dist/index.html'));
 });
 
