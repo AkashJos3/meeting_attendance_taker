@@ -98,37 +98,31 @@ The dashboard periodically fetches the latest attendance records, allowing the o
 ## 🛠️ Tech Stack
 
 ### Frontend
-
-* React
-* Vite
-* React Router
-* Axios
-* Tailwind CSS utility classes
-* Lucide React
-* QRCode React
-* React Signature Canvas
-* html2canvas
+- React 19
+- Vite
+- React Router
+- Axios
+- Lucide React
+- QRCode React
+- React Signature Canvas
+- html2canvas
 
 ### Backend
-
-* Node.js
-* Express 5
-* REST APIs
-* CORS
-* Body Parser
-* UUID
+- Node.js
+- Express 5
+- REST API
+- CORS
+- Body Parser
+- UUID
+- dotenv
 
 ### Database
-
-* SQLite
-* better-sqlite3
+- SQLite
+- better-sqlite3
 
 ### Reporting
-
-* PDFKit
-* JSON2CSV
-
-The project's dependencies and scripts are defined in the root and client `package.json` files.
+- PDFKit
+- JSON2CSV
 
 ## 📁 Project Structure
 
